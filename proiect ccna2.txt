@@ -58,9 +58,9 @@ VLAN 40 - Contractori/temporari: 20
 
 Reteaua 3 – Servere / DMZ (3 servere) - Serverele interne și publice sunt conectate direct pe modulul de switch al routerului:
 
-1× DNS
-1× Mail
-1× DHCP
+VLAN 100 - 1× DNS
+VLAN 200 - 1× Mail
+VLAN 300 - 1× DHCP
 
 ---
 
@@ -106,3 +106,4 @@ Subnetting:
 	172.16.10.8/30
 
 	2001:0:ACAD:3::4/127
+
