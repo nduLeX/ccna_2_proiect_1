@@ -51,10 +51,10 @@ VLAN 80 – Device VLAN (imprimante, camere IP, IoT interne, ~50 hosts)
 
 Reteaua 2 – Router-on-a-Stick (~200 hosturi) - pentru trafic invitati, contractori, Wi-Fi-ul corporate BYOD și echipamente IoT.
 
-Guest Wi-Fi: 80
-BYOD Corporate Wi-Fi: 70
-IoT (senzori, smart devices): 30
-Contractori/temporari: 20
+VLAN 10 - Guest Wi-Fi: 80
+VLAN 20 - BYOD Corporate Wi-Fi: 70
+VLAN 30 - IoT (senzori, smart devices): 30
+VLAN 40 - Contractori/temporari: 20
 
 Reteaua 3 – Servere / DMZ (3 servere) - Serverele interne și publice sunt conectate direct pe modulul de switch al routerului:
 
@@ -104,4 +104,5 @@ Subnetting:
 	2001:0:ACAD:3::2/127
 - retea R2 - R3:
 	172.16.10.8/30
+
 	2001:0:ACAD:3::4/127
